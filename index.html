@@ -5,8 +5,58 @@
         <link href="pvdpage/css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     </head>
+    
+    <style>
+    
+    .dropbtn {
+        padding: 16px 20px;
+        font-size: 16px;
+        border: none;
+        
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #EEEEEE;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+    }
+    
+    .dropdown-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {
+        display: block; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropbtn {background-color: #EEEEEE;}
+
+    #navSpace {
+        justify-content: space-around;
+    }
+    
+
+    </style>
+    
+    
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container">
             <div class="col-sm">
                 <p class="navbar-text" style="color:orange; margin: 0; text-align;">CITY OF PROVIDENCE</p>
@@ -19,13 +69,30 @@
             </div>
         </div>
     </nav>
-    <nav class="nav nav-fill bg-grey">
-        <a class="nav-item nav-link" href="#">CITY HALL</a>
-        <a class="nav-item nav-link" href="#">DOING BUSINESS</a>
-        <a class="nav-item nav-link" href="http://www.providenceri.gov/event/" target="_blank">EVENTS</a>
-        <a class="nav-item nav-link" href="http://www.providenceri.gov/news-events/" target="_blank">NEWS</a>
-        <a class="nav-item nav-link" href="http://www.providenceri.gov/pvd-311/" target="_blank">PVD 311</a>
-        <a class="nav-item nav-link" href="https://www.goprovidence.com/" target="_blank">EXPLORE</a>
+    <nav class="nav nav-fill bg-grey" id="navSpace" style="background-color: #EEEEEE;">
+        <div class="dropdown">
+           <button class="dropbtn">CITY HALL</button>
+           <div class="dropdown-content">
+               <a href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
+               <a href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
+               <a href="http://www.providenceri.gov/departments/">Departments</a>
+               <a href="http://council.providenceri.com/">City Council</a>
+               <a href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
+           </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">DOING BUSINESS</button>
+            <div class="dropdown-content">
+                <a href="http://www.providenceeconomicdevelopment.net/business-portal/index.php">Starting a Business</a>
+                <a href="http://www.providenceri.gov/inspection-standards/">Construction</a>
+                <a href="http://www.providenceri.gov/board-of-licenses/">Runnung a Business</a>
+                <a href="http://www.providenceri.gov/ethics/">Ethics</a>
+            </div>
+        </div>
+        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/event/" target="_blank">EVENTS</a>
+        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/news-events/" target="_blank">NEWS</a>
+        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/pvd-311/" target="_blank">PVD 311</a>
+        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="https://www.goprovidence.com/" target="_blank">EXPLORE</a>
     </nav>
     <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;"></section>
     <div class="container">
@@ -34,7 +101,7 @@
                 <h4 style="text-align: center;">What Can We Help You With?</h4>
                 <button type="button" class="btn btn-lg" style="width: 100%; background-color: orange; border: none; border-radius: none;">I WANT TO...</button>
                 <div class="card" style="background-color: #005d73; color: white;">
-                    <div class="card-body">
+                    <div class="card-body colorChange">
                         <h5 class="card-title" style="text-align: center;">Top Requests</h5>
                         <p class="card-text" style="color: grey;">
                             <a href="http://www.providenceri.gov/collector/online-tax-payment-system/" target="_blank" style="text-decoration: none; color: grey;">Pay Taxes</a><br/>
