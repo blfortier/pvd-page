@@ -1,13 +1,32 @@
-<!Doctype html>
+<!DOCTYPE HTML>
 <html>
+   
+  
     <head>
         <title>PVD</title>
         <link href="pvdpage/css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <!--  TL  
+        These 3 links from the bootstrap website will change your life. https://getbootstrap.com/ under bootstapcdn.  They make your bootstrap javascript work, which suddenly makes things alive FOR NO APPARENT REASON. It's fun. 
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+ -->
+        
+        
+        
     </head>
     
     <style>
-    
+     /*-- TL I can't figure out how you got your dropdowns to work without javascript */
+     
+  /*a*/.Colorchange:hover  {color: white;}
+  /* TL I stole the above code from your stylesheet and I took the a off of it because it isn't needed. I also fixed it to match your class, so now instead of changeColor it is colorChange */
+ 
+ 
     .dropbtn {
         padding: 16px 20px;
         font-size: 16px;
@@ -59,7 +78,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container">
             <div class="col-sm">
-                <p class="navbar-text" style="color:orange; margin: 0; text-align;">CITY OF PROVIDENCE</p>
+                <p class="navbar-text" style="color:orange; margin: 0; text-align;">CITY OF PROVIDENCE</p> 
+                
+                <!-- TL if you text alignt this left, the DIV for the P center, and the mayor to the right, it comes out nice. -->
             </div>
             <div class="col-sm">
                 <img class="center-block" style="margin: 0;" src="http://bit.ly/pvdlogo">
@@ -72,14 +93,14 @@
     <nav class="nav nav-fill bg-grey" id="navSpace" style="background-color: #EEEEEE;">
         <div class="dropdown">
            <button class="dropbtn">CITY HALL</button>
-           <div class="dropdown-content">
-               <a href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
-               <a href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
-               <a href="http://www.providenceri.gov/departments/">Departments</a>
-               <a href="http://council.providenceri.com/">City Council</a>
-               <a href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
-           </div>
-        </div>
+               <div class="dropdown-content">
+                   <a href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
+                   <a href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
+                   <a href="http://www.providenceri.gov/departments/">Departments</a>
+                   <a href="http://council.providenceri.com/">City Council</a>
+                   <a href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
+               </div>
+            </div>
         <div class="dropdown">
             <button class="dropbtn">DOING BUSINESS</button>
             <div class="dropdown-content">
@@ -89,12 +110,14 @@
                 <a href="http://www.providenceri.gov/ethics/">Ethics</a>
             </div>
         </div>
-        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/event/" target="_blank">EVENTS</a>
-        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/news-events/" target="_blank">NEWS</a>
-        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/pvd-311/" target="_blank">PVD 311</a>
-        <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="https://www.goprovidence.com/" target="_blank">EXPLORE</a>
+            <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/event/" target="_blank">EVENTS</a>
+            <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/news-events/" target="_blank">NEWS</a>
+            <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="http://www.providenceri.gov/pvd-311/" target="_blank">PVD 311</a>
+            <a class="nav-item nav-link" style="text-decoration: none; color: grey;" href="https://www.goprovidence.com/" target="_blank">EXPLORE</a>
     </nav>
-    <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;"></section>
+    <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;">
+        
+    </section>
     <div class="container">
         <div class="row" style="margin-top: 25px;">
             <div class="col-sm">
@@ -113,6 +136,7 @@
                             <a href="http://www.providenceri.gov/animal-control/adoptions/" target="_blank" style="text-decoration: none; color: grey">Animal Adoption</a><br/>
                             <a href="http://www.providenceri.gov/vital-records/" target="_blank" style="text-decoration: none; color: grey">Marriage, Birth, Death Certificates</a><br/>
                             <a href="http://www.providenceri.gov/purchasing/how-to-submit-a-bid/" target="_blank" style="text-decoration: none; color: grey">How to Find RFP's + Submit a Bid</a>
+                            <!-- TL code could be simplified by using css style instead of inline. In fact, it is overriding your CSS! -->
                         </p>
                     </div>
                 </div>
@@ -167,7 +191,7 @@ For more information, please visit http://pvdyoungmakers.com/.</p>
 
 
 
-
+<!-- TL This was really boring for me because you didn't make more than one error -->
 
 
 
